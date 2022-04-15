@@ -42,6 +42,7 @@ nav{
 
 .showcase{
     position: relative;
+    margin-bottom: 100px;
 }
 
 .showcase .container{
@@ -108,7 +109,6 @@ input{
     background: var(--primary-color);
     border: none;
     border-radius: 6px;
-    font-weight: 300;
     color: var(--text-color);
 }
 
@@ -127,7 +127,145 @@ input{
     transform: skewY(-3deg);
 }
 
+.stats-text-header{
+    font-size: 1.2rem;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding-bottom: 80px;
+}
 
+.stats-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    margin-bottom: 40px;
+}
+
+.stats-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+i{
+    transform: scale(3);
+}
+
+.stats-card h1{
+    font-size: 1.8rem;
+    padding: 30px 0 20px 0;
+}
+
+
+.cli{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.cli img{
+    width: 85%;
+    justify-self: flex-end;
+    align-self: center;
+}
+
+.cli-text-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.cli-text-card{
+    width: 60%;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+
+.cloud-hosting-container{
+    display: flex;
+    background: var(--primary-color);
+    color: var(--text-color);
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 100px;
+    margin-bottom: 20px;
+}
+
+.cloud-hosting-text{
+    text-align: center;
+}
+
+.cloud-hosting-text h1{
+    font-size: 2.4rem;
+    padding-bottom: 20px;
+}
+
+.cloud-hosting-text p{
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+}
+
+.cloud-hosting-text a{
+    display: inline-block;
+    text-decoration: none;
+    background: var(--text-color);
+    padding: 10px 20px;
+    color: var(--secondary-text-color);
+    border-radius: 4px;
+}
+
+.cloud-hosting-container img{
+    width: 40vw;
+}
+
+.languages-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:30px 0;
+}
+
+.languages-container{
+    text-align: center;
+}
+
+.languages-card{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 140px;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: var(--primary-color);
+    padding: 60px;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.footer-2 li{
+    list-style: none;
+    padding: 5px;
+}
+
+.footer-2 li a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.footer-3 i{
+    padding: 20px;
+    transform: scale(2);
+    cursor: pointer;
+}
 
 
 
