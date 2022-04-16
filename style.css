@@ -10,6 +10,7 @@
     --secondary-text-color: #000;
     font-weight: 300;
 }
+/* Navbar */
 
 nav{
     display: flex;
@@ -22,6 +23,11 @@ nav{
 .logo{
     font-size: 1.4rem;
     margin-left: 10%;
+    color: var(--text-color);
+}
+
+.logo a{
+    text-decoration: none;
     color: var(--text-color);
 }
 
@@ -38,7 +44,14 @@ nav{
 .navmenu li a{
     text-decoration: none;
     color: var(--text-color);
+    padding-bottom: 4px;
 }
+
+.navmenu a:hover{
+    border-bottom: var(--text-color) solid 2px;
+}
+
+/* Showcase */
 
 .showcase{
     position: relative;
@@ -76,6 +89,10 @@ nav{
     color: var(--text-color);
 }
 
+.showcase-text a:hover{
+    transform: scale(0.98);
+}
+
 .showcase-input-card{
     margin-top: 80px;
     padding: 40px;
@@ -110,6 +127,11 @@ input{
     border: none;
     border-radius: 6px;
     color: var(--text-color);
+    cursor: pointer;
+}
+
+.submit-btn:hover{
+    transform: scale(0.98);
 }
 
 ::placeholder{
@@ -126,6 +148,8 @@ input{
     width: 100%;
     transform: skewY(-3deg);
 }
+
+/* Stats */
 
 .stats-text-header{
     font-size: 1.2rem;
@@ -158,6 +182,8 @@ i{
     padding: 30px 0 20px 0;
 }
 
+/* CLI */
+
 
 .cli{
     display: grid;
@@ -184,6 +210,8 @@ i{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     margin: 20px;
 }
+
+/* Cloud Hosting */
 
 .cloud-hosting-container{
     display: flex;
@@ -222,6 +250,8 @@ i{
     width: 40vw;
 }
 
+/* Languages */
+
 .languages-cards{
     display: flex;
     flex-wrap: wrap;
@@ -240,6 +270,11 @@ i{
     border-radius: 5px;
     text-align: center;
     width: 140px;
+    transition: transform 300ms;
+}
+
+.languages-card:hover{
+    transform: translateY(-8px);
 }
 
 footer{
