@@ -321,7 +321,7 @@ footer{
 
 /* features */
 
-.feature, .platform{
+.feature, .platform, .docs-header{
     display: flex;
     background: var(--primary-color);
     color: var(--text-color);
@@ -334,7 +334,7 @@ footer{
     width: 40vw;
 }
 
-.feature-text h1{
+.feature-text h1, .docs-text h1{
     font-size: 4rem;
     padding-bottom: 10px;
 }
@@ -343,7 +343,7 @@ footer{
     font-size: 1.2rem;
 }
 
-.feature img{
+.feature img, .docs-header img{
     width: 15vw;
 }
 
@@ -400,6 +400,114 @@ footer{
 .grid-card i{
     padding-right: 20px;
 }
+
+/* Docs */
+
+.docs-main{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.docs-navigation, .docs{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+    justify-self: flex-end;
+    margin: 40px;
+    border-radius: 6px;
+}
+
+.docs-navigation{
+    height: fit-content;
+}
+
+.essential li, .deployment li{
+    list-style: none;
+    border-bottom: var(--secondary-text-color) 1px solid;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.essential li a, .deployment li a{
+    text-decoration: none;
+    color: var(--secondary-text-color);
+}
+
+.docs-navigation h2, .essential, .deployment{
+    padding-bottom: 20px;
+}
+
+.essential, .deployment{
+    width: 100%;
+}
+
+.docs{
+    justify-self: flex-start;
+}
+
+.introduction p{
+    padding: 20px 0;
+}
+
+.remind{
+    display: flex;
+    align-items: center;
+    background: #e9c46a;
+    padding: 10px;
+}
+
+.remind i{
+    padding: 0 10px;
+}
+
+.remind p{
+    padding: 0;
+}
+
+.cli-install, .requirements, .installation{
+    padding-top: 20px;
+}
+
+.cli-install h1, .requirements h1, .installation h1{
+    padding-bottom: 20px;
+}
+
+.cli-install a{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--text-color);
+    background: var(--primary-color);
+    padding: 10px 30px;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+
+.cli-install a:hover{
+    transform: scale(0.98)
+}
+
+.installation h3{
+    padding-bottom: 10px;
+}
+
+.installation p{
+    background: #023047;
+    color: var(--text-color);
+    padding: 5px 40px;
+    font-family: monospace;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
